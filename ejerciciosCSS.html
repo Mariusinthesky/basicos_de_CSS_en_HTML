@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios CSS</title>
+
+    <style>
+        .divEjemplo1{
+            color:white; background-color: red; font-size: 32px; text-align: center;
+        }
+
+        .pEjemplo1{
+            color: white; background-color: green; font-size: 18px;
+        }
+
+        .buttonEjemplo1{
+            background-color: orange; font-size: 18px;
+        }
+
+        .pEjemplo2{
+            background-color: pink; font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #idEjemplo2Numero2{
+            color: blue;font-size: 36px;
+        }
+
+        #idEjemplo2Numero3{
+            font-size: 24px;
+        }
+
+        #idEjemplo2Numero4{
+            background-color: rgb(127, 255, 170); font-size: 24px;
+        }
+
+        .butEjercicio3but1{
+            background-color: black; color: white;
+        }
+
+        .butEjercicio3but2{
+            background-color: yellow;
+        }
+
+        .butEjercicio3but1,
+        .butEjercicio3but2{
+            font-size: 28px; font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .avatar.proportioned{
+            height: auto; width: 300px;
+        }
+
+        .avatar.distorted{
+            height: 400px; width: 200px;
+        }
+
+        .container .text{
+            background-color: yellow; color: red; font-size: 20px; text-align: center;
+        }
+
+        .para,
+        .small-para {
+            color: hsl(0, 0%, 0%); font-weight: 800;
+        }
+
+        .small-para {
+            font-size: 14px; font-weight: 800;
+        }
+
+        .para {
+        font-size: 22px;
+        }
+
+        .confirm {
+        background-color: green; color: white; font-weight: bold;
+        } 
+
+        .button {
+         font-size: 20px;
+        }
+
+        .child {
+        color: rgb(0, 0, 0); font-weight: 800; font-size: 14px;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>EJERCICOS EN CSS</h1>
+    <h2>Descripcion: </h2>
+    <p>En este file se van a hacer todos y cada uno de los ejemplos que se pidan en esta primera vision de CSS</p><hr/>
+
+    <h2>01-metodos-CSS</h2>
+    <ul>
+        <li>div: fondo rojo, texto blanco, tamaño de fuente de 32 px, alineado al centro y negrita</li>
+        <li>p: un fondo verde, texto blanco y un tamaño de fuente de 18px</li>
+        <li>button: un fondo naranja y un tamaño de fuente de 18px</li>
+    </ul>
+
+    <h2>Resultado:</h2>
+
+    <div class="divEjemplo1"><strong>Hola hola hola hola hola hola hola</strong></div>
+    <p class="pEjemplo1">Hola hola hola hola hola hola hola</p>
+    <button class="buttonEjemplo1">HOLA</button><hr/>
+
+    
+    <h2>02-selectores de identificacion-CSS</h2>
+    <ul>
+        <li>Todos los elementos impares : un fondo rojo claro/rosa y una lista de fuentes que contienen Verdanay DejaVu Sanscon sans-serifcomo respaldo</li>
+        <li>El segundo elemento : texto azul y un tamaño de fuente de 36px.</li>
+        <li>El tercer elemento : además de los estilos para todos los elementos impares, agregue un tamaño de fuente de 24 píxeles.</li>
+        <li>El cuarto elemento : un fondo verde claro, un tamaño de fuente de 24 píxeles y negrita.</li>
+    </ul>
+
+    <h2>Resultado:</h2>
+
+    <p class="pEjemplo2">Numero 1: Soy una clase</p>
+    <p id="idEjemplo2Numero2">Numero 2: Soy un ID</p>
+    <p class="pEjemplo2" id="idEjemplo2Numero3">Numero 3: Soy una clase, pero mas chimba!</p>
+    <p id="idEjemplo2Numero4">Numero 4: Soy otro ID</p>
+    <p class="pEjemplo2"><strong>Numero 5: Soy una clase</strong></p><hr/>
+
+
+    <h2>03-Selectores de agrupacion-CSS</h2>
+    <ul>
+        <li>El primer elemento : un fondo negro y texto blanco.</li>
+        <li>El segundo elemento : un fondo amarillo.</li>
+        <li>Ambos elementos : un tamaño de fuente de 28px y una lista de fuentes que contienen Helveticay Times New Roman, sans-serifcomo alternativa</li>
+    </ul>
+
+    <h2>Resultado:</h2>
+
+    <button class="butEjercicio3but1">Clickeame</button>
+    <button class="butEjercicio3but2">NO!! Clickeame a mi</button><hr/>
+
+
+    <h2>04-Selectores de encadenamiento-CSS</h2>
+    <ul>
+        <li>Haga que el elemento con las clases avatary proportionedtenga 300 píxeles de ancho, luego asígnele una altura para que conserve sus proporciones cuadradas originales (¡no codifique un valor de píxel para la altura!).</li>
+        <li>Haga que el elemento con las clases avatary distortedtenga 200 píxeles de ancho, luego haga que su altura sea el doble de su ancho (aquí debe codificar en un valor de píxel).</li>
+    </ul>
+
+    <h2>Resultado:</h2>
+
+    <div>
+        <img class="avatar proportioned" src="imagenes/woman.jpg" alt="Woman with glasses">
+        <img class="avatar distorted" src="imagenes/man.jpg" alt="Man with surprised expression">
+      </div>
+      <div>
+        <img class="original proportioned" src="imagenes/woman.jpg" alt="Woman with glasses">
+        <img class="original distorted" src="imagenes/man.jpg" alt="Man with surprised expression">
+      </div><hr/>
+
+    
+    <h2>05-Convinador descendiente-CSS</h2>    
+    <ul>
+        <li>Solo los pelementos que son descendientes del divelemento deben tener un fondo amarillo, texto rojo, un tamaño de fuente de 20 px y alineados al centro.</li>
+    </ul>
+
+    <h2>Resultado:</h2>
+
+    <div class="container">
+        <p class="text">This should be styled.</p>
+      </div>
+      <p class="text">This should be unstyled.</p>
+      <p class="text">This should be unstyled.</p>
+      <div class="container">
+        <p class="text">This should be styled.</p>
+        <p class="text">This should be styled.</p>
+      </div><hr/>
+
+    
+    <h2>06-Arreglo en cascada-CSS</h2>
+    <ul>
+        <li>Conseguir el resultado que se muestra en el curso</li>
+    </ul>
+    
+    <h2>Resultado:</h2>
+
+    <p class="para">I'm just a paragraph with bold text!</p>
+    <p class="para small-para">I'm a smaller paragraph, also with bold text!</p>
+
+    <button id="confirm-button" class="button confirm">Confirm</button>
+    <button id="cancel-button" class="button cancel">Cancel</button>
+
+    <div class="text">I'm a div with thin text!</div>
+    <div class="text">I'm a div with thin text and a child div!
+      <div class="text child">I'm a smaller child div with bold text.</div>
+    </div><hr/>
+
+
+</body>
+</html>
